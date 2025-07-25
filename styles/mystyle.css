@@ -215,7 +215,6 @@ footer {
   padding: 3rem;
 }
 .footer-container {
-  margin: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
@@ -224,9 +223,9 @@ footer {
 .footer-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
+  
 }
-.footer-links .link-col-1,
+.link-col-1,
 .link-col-2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -237,12 +236,11 @@ footer {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
 }
-.footer-logo p {
-  max-width: 90%;
-}
+
 .footer-icon {
   display: flex;
+  justify-content: end;
   gap: 1.5rem;
-  text-align: end;
+  text-align:end;
   align-items: center;
 }
