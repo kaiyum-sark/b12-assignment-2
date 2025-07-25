@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -243,4 +244,217 @@ footer {
   gap: 1.5rem;
   text-align:end;
   align-items: center;
+}
+
+/* Resoponsive Design for Small viewport  */
+@media (max-width:576px) {
+  .section-title {
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.text-gray {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.btn-primary{
+  padding: auto;
+}
+  .nav-links a {
+  display: none;
+}
+ .container {
+  max-width: calc(100% - 1rem - 1rem);
+  margin: 10px 16px;
+} 
+/* Navigation Bar  */
+.nav{
+  max-height: 50px;
+  align-items: center;
+}
+.nav img{
+    max-height: inherit;
+}
+.cart{
+  font-size: 30px;
+}
+/* Hero Banner  */
+.banner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  margin-top: 20px;
+}
+.banner-left{
+  margin: 1rem auto;
+}
+.banner-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.254);
+}
+.banner-title-line-2 {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.our-plants {
+  margin:  auto;
+  text-align: center;
+  
+}
+
+.our-plants p {
+  padding: 0 ;
+}
+.plants-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: calc(576px - 1rem - 1rem);
+  margin: 1rem auto;
+}
+.card img{
+  width: 265px;
+}
+.card-text{
+  font-size: 1rem;
+}
+
+
+/* Plants Lover Section  */
+.plants-lover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.badge-image {
+  display: none;
+}
+.plants-lover-right {
+  margin: 18px auto;
+
+}
+.store-image{
+  max-width: calc(100%);
+}
+.plants-lover-right ul {
+  padding-left: 1rem;
+}
+/* Latest Deals Section  */
+.latest-deals {
+  margin-top: 1rem;
+  text-align: center;
+}
+.latest-deals p {
+  padding: 0 ;
+}
+/* -------Deals Section Grid display  */
+.deals-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.deals-container-small {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:calc(100% - 10px - 10px);
+  margin:auto;
+}
+/* --------Deals Container Text Position--------- */
+.deals-image img {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  filter: brightness(45%);
+}
+.deals-image {
+  position: relative;
+}
+.deals-image .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.deals-container-large img {
+  width: calc(100% - 0px - 20px);
+  border-radius: 1rem;
+}
+.deals-container-large h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.deals-container-large h5 {
+  font-size: 1rem;
+}
+
+
+/* join section  */
+.newsletter {
+  margin-top: 40px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: rgba(7, 51, 79, 0.4);
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.newsletter h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subscription {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: calc(100% - 2rem - 2rem);
+  margin: 0 auto;
+}
+.subscription > input {
+  flex: 2;
+  padding: 1rem;
+}
+
+/* Footer Section  */
+footer {
+  background-color: white;
+  padding: 3rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+.link-col-1,
+.link-col-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: start;
+  gap: 10px;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: start;
+  gap: 1.5rem;
+  text-align:start;
+  align-items: center;
+}
 }
