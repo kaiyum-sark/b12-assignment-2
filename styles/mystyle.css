@@ -181,3 +181,33 @@ body {
 .deals-container-large h5{
   font-size: 1.5rem;
 }
+
+/* Join Section  */
+.newsletter{
+  margin-top: 6rem;
+ padding-top: 10rem;
+ padding-bottom: 10rem;
+  text-align: center;
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+.newsletter h3{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subscription{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: calc(1140px - 100px - 100px);
+  margin: 0 auto;
+}
+.subscription>input{
+  flex: 2;
+  padding: 1rem;
+}
