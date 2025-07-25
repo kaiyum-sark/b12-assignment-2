@@ -124,9 +124,13 @@ body {
 .badge-image {
   height: 286px;
   position: absolute;
-  transform: translate(-65%, -40%);
+  
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+  animation: spin 2s linear infinite;
+  transform-origin: center;
+  
 }
+
 .plants-lover-right {
   margin: 30px 0 30px 100px;
 }
@@ -457,4 +461,15 @@ footer {
   text-align:start;
   align-items: center;
 }
+}
+
+/* Animation  */
+@keyframes spin {
+  0% {
+    
+    transform:translate(-65%, -40%) rotate(0deg);
+  }
+  100% {
+    transform:translate(-65%, -40%) rotate(360deg);
+  }
 }
